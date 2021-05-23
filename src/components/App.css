@@ -1,1 +1,116 @@
-/* Styles go here */
+body {
+    background-color: #141924;
+    color: rgb(161, 161, 161);
+}
+
+.identicon {
+	border-radius: 3px;
+}
+
+.hashpuppies {
+	color: #8769f1 !important;
+	font-size: 1.3em !important;
+}
+
+.navbaar {
+    background-color: #060b13 !important;
+}
+
+.cursor_ptr {
+    cursor: pointer;
+}
+
+.text_color {
+    color: rgb(190, 188, 188) !important;
+}
+
+.purple_text {
+    color: #9376fa;
+}
+
+input {
+	border: none !important;
+	outline: none !important;
+}
+
+input:focus {
+	border: none !important;
+	outline: none !important;
+}
+
+.upload {
+    font-size: 0.8em;
+}
+
+input::-webkit-file-upload-button {
+	border: none !important;
+	outline: none !important;
+	border-radius: 5px;
+	background: #523ba8;
+	margin-right: 15px;
+	color: rgb(233, 233, 233);
+	padding: 5px 12px 6px 12px;
+}
+
+input::-webkit-file-upload-button:hover {
+	cursor: pointer;
+    background-color: #3c2786;
+    color: rgb(228, 228, 228) !important;
+}
+
+
+.input_box {
+    background-color: #060b13 !important;
+    border: none !important;
+    outline: none !important;
+    color: rgb(175, 175, 175) !important;
+}
+
+.input_box:active {
+    background-color: #060b13 !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.share_button {
+    background-color: #523ba8;
+    color: rgb(233, 233, 233) !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.share_button:hover {
+    background-color: #3c2786;
+    color: rgb(228, 228, 228) !important;
+}
+
+.image {
+    max-width: 400px;
+    border-radius: 4px;
+}
+
+.tip_btn {
+    color: #8769f1 !important;
+}
+
+.background_dark  {
+    background-color: #060b13 !important;
+}
+
+.card {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #080d16;
+    box-shadow:  10px 10px 30px #03060a, -10px -10px 30px #09101c;
+}
+
+.buyButton {
+    color: rgb(190, 188, 188) !important;
+    background-color: #080d16 !important;
+    box-shadow:  7px 7px 14px #000205, -3px -3px 7px #101925;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
