@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import Web3 from 'web3';
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import HashPuppies from '../abis/HashPuppies.json';
 import './App.css';
 import Navbar from './Navbar';
+import HeroSection from './HeroSection';
 import Main from './Main';
 import CreatePup from './CreatePup';
 
@@ -115,32 +117,24 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<Navbar account={this.state.account} />
-				<div className="container-fluid mt-5">
-					<div className="row">
-						<main role="main" className="col-lg-12 d-flex text-center mt-5">
-							<div className="content mr-auto ml-auto mt-4">
-								<h1>Hash Puppies</h1>
-								<p>
-									<code className="purple_text">Collectible PUPS</code>&nbsp; to  &nbsp;<code className="purple_text">HODL</code>
-								</p>
-							</div>
-						</main>
+				<BrowserRouter>
+					<div>
+						<Navbar account={this.state.account} />
+						<HeroSection />
+						<Switch>
+							<Route exact path="/" render={() =>
+								this.state.loading
+									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
+									: <Main puppies={this.state.puppies} purchasePuppy={this.purchasePuppy} />}
+							/>
+							<Route path="/create" render={() =>
+								this.state.loading
+									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
+									: <CreatePup createPuppy={this.createPuppy} captureFile={this.captureFile} />}
+							/>
+						</Switch>
 					</div>
-				</div>
-				{ this.state.loading
-					? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
-					: <div>
-						<CreatePup
-							createPuppy={this.createPuppy}
-							captureFile={this.captureFile}
-						/>
-						<Main
-							puppies={this.state.puppies}
-							purchasePuppy={this.purchasePuppy}
-						/>
-					</div>
-				}
+				</BrowserRouter>
 			</div>
 		);
 	}

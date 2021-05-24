@@ -5,7 +5,7 @@ class Main extends Component {
 	render() {
 		return (
 			<div className="container-fluid mt-5" style={{ maxWidth: '1200px' }}>
-				<div class="row mb-5">
+				<div class="row mb-5 mt-5">
 					{this.props.puppies.map((puppy, key) => {
 						return (
 							<div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -42,31 +42,15 @@ class Main extends Component {
 														Exclusive :
 													</div>
 													<div className="col-6">
-														{puppy.exclusive.toString()}
+														{puppy.exclusive ? <i class="far fa-check-circle exclusive"></i> : <i class="far fa-times-circle not_exclusive"></i>}
 													</div>
 												</div>
 												<div className="row">
 													<div className="offset-1 col-5">
-														Maixmize :
+														Fullscreen :
 													</div>
 													<div className="col-6">
-														<a href={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} className="text_color">View large</a>
-													</div>
-												</div>
-												<div className="row">
-													<div className="offset-1 col-5">
-														Owner :
-													</div>
-													<div className="col-6">
-														{puppy.owner}
-													</div>
-												</div>
-												<div className="row">
-													<div className="offset-1 col-5">
-														Purchased :
-													</div>
-													<div className="col-6">
-														{puppy.purchased.toString()}
+														<a href={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} target="_blank" className="darker_grey"><u>View large</u></a>
 													</div>
 												</div>
 											</div>
@@ -79,12 +63,21 @@ class Main extends Component {
 														onClick={(event) => {
 															this.props.purchasePuppy(event.target.name, window.web3.utils.toWei(event.target.value, 'Ether'));
 														}}
-														className="buyButton btn mt-4"
+														className="buyButton btn mt-5"
 													>
 														Acquire
-                                            </button>
+                                            		</button>
 												</div>
-												: null
+												: <div className="container-fluid mt-5" >
+													<div className="row mt-3 align-items-center justify-content-center">
+														<div className="col-2 owner">
+															Owner
+														</div>
+														<div className="col-12 owner_address darker_grey text-center">
+															{puppy.owner}
+														</div>
+													</div>
+												</div>
 											}
 											<br />
 											<br />
