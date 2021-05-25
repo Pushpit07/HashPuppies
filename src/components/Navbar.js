@@ -6,11 +6,11 @@ class Navbar extends Component {
 
     render() {
         return (
-            <nav className="navbar navbar-light fixed-top shadow-lg navbaar" style={{
+            <nav className="navbar navbar-light fixed-top shadow-lg" style={{
                 height: "60px"
             }
             }>
-                <Link to={"/"}><span className="navbar-brand mb-0 h1 hashpuppies ml-3 cursor_ptr"><i className="fas fa-paw mr-2 ml-1 cursor_ptr"></i>Hash Puppies</span></Link>
+                <Link to={"/"}><span className="navbar-brand mb-0 h1 ml-3 hashpuppies cursor_ptr"><i className="fas fa-paw mr-2 ml-1 cursor_ptr"></i>Hash Puppies</span></Link>
 
                 <ul className="navbar-nav px-3">
                     <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">

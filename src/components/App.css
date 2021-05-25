@@ -1,31 +1,14 @@
+/**************************************************************************/
+/*****************************    Global    *******************************/
+/**************************************************************************/
+
 body {
     background-color: #141924;
     color: rgb(161, 161, 161);
 }
 
-.identicon {
-	border-radius: 3px;
-}
-
-.hashpuppies {
-	color: #8769f1 !important;
-	font-size: 1.3em !important;
-}
-
-.navbaar {
+.background_dark  {
     background-color: #060b13 !important;
-}
-
-.create_pup_nav {
-    font-size: 1.1em !important;
-}
-
-.cursor_ptr {
-    cursor: pointer;
-}
-
-.text_color {
-    color: rgb(190, 188, 188) !important;
 }
 
 .darker_grey {
@@ -37,9 +20,113 @@ body {
     cursor: pointer;
 }
 
+.text_color {
+    color: rgb(190, 188, 188) !important;
+}
+
+
+
+
+/**************************************************************************/
+/*****************************    Navbar    *******************************/
+/**************************************************************************/
+
+.navbar {
+    background-color: #060b13 !important;
+}
+
+.hashpuppies {
+	color: #8769f1 !important;
+	font-size: 1.3em !important;
+}
+
+.cursor_ptr {
+    cursor: pointer;
+}
+
+.create_pup_nav {
+    font-size: 1.1em !important;
+}
+
+.identicon {
+	border-radius: 3px;
+}
+
+
+
+
+/**************************************************************************/
+/**************************    Hero Section    ****************************/
+/**************************************************************************/
+
 .purple_text {
     color: #9376fa;
 }
+
+
+
+
+/**************************************************************************/
+/**************************    Main Homepage    ***************************/
+/**************************************************************************/
+
+.card {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #080d16;
+    box-shadow:  10px 10px 25px #03060a, -10px -10px 20px #09101c;
+}
+
+.image {
+    max-width: 400px;
+    border-radius: 4px;
+}
+
+.exclusive {
+    color: rgb(109, 231, 109) !important;
+}
+
+.not_exclusive {
+    color: rgb(236, 73, 73) !important;
+}
+
+.buyButton {
+    color: rgb(190, 188, 188) !important;
+    background-color: #080d16 !important;
+    box-shadow:  5px 5px 6px #000205, -3px -3px 7px #101925;
+    font-size: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.buyButton:hover {
+    box-shadow:  inset 5px 5px 6px #000205, inset -3px -3px 7px #101925;
+    font-size: 0.95em;
+    color: rgb(109, 231, 109) !important;
+}
+
+.owner {
+    font-size: 0.9em;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 5px !important;
+}
+
+.owner_address {
+    font-size: 0.75em;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+
+
+/**************************************************************************/
+/***************************    Create Pup    *****************************/
+/**************************************************************************/
 
 input {
 	border: none !important;
@@ -50,27 +137,6 @@ input:focus {
 	border: none !important;
 	outline: none !important;
 }
-
-.upload {
-    font-size: 0.8em;
-}
-
-input::-webkit-file-upload-button {
-	border: none !important;
-	outline: none !important;
-	border-radius: 5px;
-	background: #523ba8;
-	margin-right: 15px;
-	color: rgb(233, 233, 233);
-	padding: 5px 12px 6px 12px;
-}
-
-input::-webkit-file-upload-button:hover {
-	cursor: pointer;
-    background-color: #3c2786;
-    color: rgb(228, 228, 228) !important;
-}
-
 
 .input_box {
     background-color: #060b13 !important;
@@ -99,24 +165,24 @@ input::-webkit-file-upload-button:hover {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
+}
   
-  /* Hide the browser's default checkbox */
-  .checkbox_container input {
+/* Hide the browser's default checkbox */
+.checkbox_container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
+}
 
-  .checkbox_container > span > p {
-      margin-left: 35px !important;
-      font-size: 0.7em;
-  }
+.checkbox_container > span > p {
+    margin-left: 35px !important;
+    font-size: 0.7em;
+}
   
-  /* Create a custom checkbox */
-  .checkmark {
+/* Create a custom checkbox */
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -125,34 +191,34 @@ input::-webkit-file-upload-button:hover {
     border-radius: 3px;
     background-color: #060b13;
     box-shadow:  inset 5px 5px 6px #000205, inset -3px -3px 7px #101925 !important;
-  }
+}
   
-  /* On mouse-over, add a purple background color */
-  .checkbox_container:hover input ~ .checkmark {
+/* On mouse-over, add a purple background color */
+.checkbox_container:hover input ~ .checkmark {
     background-color: #523ba8;
     box-shadow: none !important;
-  }
+}
   
-  /* When the checkbox is checked, add a purple background */
-  .checkbox_container input:checked ~ .checkmark {
+/* When the checkbox is checked, add a purple background */
+.checkbox_container input:checked ~ .checkmark {
     background-color: #523ba8;
     box-shadow: none !important;
-  }
+}
   
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
+}
   
-  /* Show the checkmark when checked */
-  .checkbox_container input:checked ~ .checkmark:after {
+/* Show the checkmark when checked */
+.checkbox_container input:checked ~ .checkmark:after {
     display: block;
-  }
+}
   
-  /* Style the checkmark/indicator */
-  .checkbox_container .checkmark:after {
+/* Style the checkmark/indicator */
+.checkbox_container .checkmark:after {
     left: 8px;
     top: 4px;
     width: 5px;
@@ -162,7 +228,29 @@ input::-webkit-file-upload-button:hover {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
+
+
+
+input::-webkit-file-upload-button {
+	border: none !important;
+	outline: none !important;
+	border-radius: 5px;
+	background: #523ba8;
+	margin-right: 15px;
+	color: rgb(233, 233, 233);
+	padding: 5px 12px 6px 12px;
+}
+
+input::-webkit-file-upload-button:hover {
+	cursor: pointer;
+    background-color: #3c2786;
+    color: rgb(228, 228, 228) !important;
+}
+
+.upload {
+    font-size: 0.8em;
+}
 
 .share_button {
     background-color: #523ba8;
@@ -174,63 +262,4 @@ input::-webkit-file-upload-button:hover {
 .share_button:hover {
     background-color: #3c2786;
     color: rgb(228, 228, 228) !important;
-}
-
-.image {
-    max-width: 400px;
-    border-radius: 4px;
-}
-
-.tip_btn {
-    color: #8769f1 !important;
-}
-
-.background_dark  {
-    background-color: #060b13 !important;
-}
-
-.card {
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    background: #080d16;
-    box-shadow:  10px 10px 25px #03060a, -10px -10px 20px #09101c;
-}
-
-.exclusive {
-    color: rgb(109, 231, 109) !important;
-}
-
-.not_exclusive {
-    color: rgb(236, 73, 73) !important;
-}
-
-.owner {
-    font-size: 0.9em;
-    margin: 0 !important;
-    padding: 0 !important;
-    margin-left: 5px !important;
-}
-
-.owner_address {
-    font-size: 0.75em;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.buyButton {
-    color: rgb(190, 188, 188) !important;
-    background-color: #080d16 !important;
-    box-shadow:  5px 5px 6px #000205, -3px -3px 7px #101925;
-    font-size: 1em;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-.buyButton:hover {
-    box-shadow:  inset 5px 5px 6px #000205, inset -3px -3px 7px #101925;
-    font-size: 0.95em;
-    color: rgb(109, 231, 109) !important;
 }

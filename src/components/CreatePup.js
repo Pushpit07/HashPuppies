@@ -23,9 +23,9 @@ class CreatePup extends Component {
                         }}>
                             <input type="text" placeholder="Enter Pup's name" className="form-control input_box shadow-sm mt-4 mb-3" ref={(name) => { this.puppyName = name }} required />
                             <input type="text" placeholder="Enter price in ETH" className="form-control input_box shadow-sm mt-4 mb-3" ref={(price) => { this.puppyPrice = price }} required />
-                            <label class="checkbox_container">
+                            <label className="checkbox_container">
                                 <input type="checkbox" id="exclusive" className="exclusive_checkbox" ref={(exclusive) => { this.puppyExclusive = exclusive }} />
-                                <span class="checkmark"><p>Exclusive</p></span>
+                                <span className="checkmark"><p>Exclusive</p></span>
                             </label>
                             <br />
                             <br />
