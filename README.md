@@ -46,10 +46,14 @@ ReactJS
 <br/>
 Web3
 <br/>
+AutoDesk
+<br/>
 Metamask
 <br/>
 BootStrap
 <br/>
 Chai
+<br/>
+Mocha
 <br/>
 Identicon
