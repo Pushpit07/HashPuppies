@@ -10,9 +10,9 @@ function Footer() {
 
                     <div className="row">
                         <div className="horizontal_lines_small_screen col-12 mb-2"></div>
-                        <div className="col-md-1 col-12 footer_section">PuppyVerse</div>
+                        <div className="col-md-2 col-12 footer_section">Get into the PuppyVerse</div>
                         <div className="horizontal_lines_small_screen col-12 mt-2"></div>
-                        <div className="offset-md-1 col-md-10 col-12 footer_heading margin_small10">PUPS</div>
+                        <div className="offset-md-0 col-md-10 col-12 footer_heading margin_small10">PUPS</div>
                     </div>
 
                     <div className="row margin6">
