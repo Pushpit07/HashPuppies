@@ -11,7 +11,7 @@ class Main extends Component {
 							<div class="col-12 col-md-6 col-lg-4 mb-5">
 								<div class="card border-light shadow-soft" key={key}>
 									<div class="card-header p-3">
-										<a href={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} target="_blank">
+										<a href={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} target="_blank" data-toggle="tooltip" data-placement="bottom" title="Click to maximize">
 											<img src={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} className="image card-img-top rounded" />
 										</a>
 									</div>

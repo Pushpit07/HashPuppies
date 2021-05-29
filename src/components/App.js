@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Web3 from 'web3';
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import HashPuppies from '../abis/HashPuppies.json';
-import './App.css';
-import Navbar from './Navbar';
+import './styles/App.css';
+import Navbar from './Layout/Navbar';
+import Footer from './Layout/Footer';
 import HeroSection from './HeroSection';
 import Main from './Main';
 import CreatePup from './CreatePup';
@@ -133,6 +134,7 @@ class App extends Component {
 									: <CreatePup createPuppy={this.createPuppy} captureFile={this.captureFile} />}
 							/>
 						</Switch>
+						<Footer />
 					</div>
 				</BrowserRouter>
 			</div>

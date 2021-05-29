@@ -7,7 +7,7 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-light fixed-top shadow-lg" style={{
-                height: "60px"
+                height: "70px"
             }
             }>
                 <Link to={"/"}><span className="navbar-brand mb-0 h1 ml-3 hashpuppies cursor_ptr"><i className="fas fa-paw mr-2 ml-1 cursor_ptr"></i>Hash Puppies</span></Link>
@@ -16,7 +16,7 @@ class Navbar extends Component {
                     <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
                         <Link to={"/create"}><span className="navbar-brand h8 mr-5 cursor_ptr darker_grey create_pup_nav">Create Pup</span></Link>
 
-                        <small className="mr-4 text_color">
+                        <small className="mr-3 text_color">
                             <small id="account">{this.props.account}</small>
                         </small>
 
