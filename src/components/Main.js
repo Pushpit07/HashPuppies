@@ -8,9 +8,9 @@ class Main extends Component {
 				<div class="row mb-5 mt-5">
 					{this.props.puppies.map((puppy, key) => {
 						return (
-							<div class="col-12 col-md-6 col-lg-4 mb-5">
+							<div class="col-12 col-md-6 col-lg-4 mb-5 mt-3">
 								<div class="card border-light shadow-soft" key={key}>
-									<div class="card-header p-3">
+									<div class="card-header pt-4 text-center">
 										<a href={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} target="_blank" data-toggle="tooltip" data-placement="bottom" title="Click to maximize">
 											<img src={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} className="image card-img-top rounded" />
 										</a>
@@ -20,7 +20,7 @@ class Main extends Component {
 											<h3 class="h5 card-title mt-4">{puppy.name}</h3>
 										</div>
 										<p class="card-text">
-											<div className="container-fluid mt-3" >
+											<div className="container-fluid mt-3 offset-1" >
 												<div className="row">
 													<div className="offset-1 col-5">
 														ID :
@@ -65,7 +65,7 @@ class Main extends Component {
 														}}
 														className="buyButton btn mt-5"
 													>
-														Acquire
+														Purchase
                                             		</button>
 												</div>
 												: <div className="container-fluid mt-5" >
