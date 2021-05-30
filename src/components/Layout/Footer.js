@@ -16,22 +16,22 @@ function Footer() {
                     </div>
 
                     <div className="row margin6">
-                        <a href="#" className="filer_items offset-md-2 col-md-2 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Latest Puppies</div></a>
-                        <a href="/" className="filer_items col-md-4 col-12 hover_effect hover_effect_row"><div className="margin_small6">Puppies Searching</div></a>
+                        <a href="#" className="filer_items offset-md-2 col-md-2 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Latest Pups</div></a>
+                        <a href="/" className="filer_items col-md-4 col-12 hover_effect hover_effect_row"><div className="margin_small6">Pups Searching</div></a>
                     </div>
 
                     <div className="row">
-                        <a href="#" className="filer_items offset-md-2 col-md-2 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Popular Puppies</div></a>
-                        <a href="#" className="filer_items col-md-4 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Puppies Performance Search</div></a>
+                        <a href="#" className="filer_items offset-md-2 col-md-2 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Popular Pups</div></a>
+                        <a href="#" className="filer_items col-md-4 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Pups Performance Search</div></a>
                     </div>
 
                     <div className="row">
-                        <a href="#" className="filer_items offset-md-2 col-md-2 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Puppies Trends</div></a>
-                        <a href="#" className="filer_items col-md-4 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Puppies Screener</div></a>
+                        <a href="#" className="filer_items offset-md-2 col-md-2 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Pups Trends</div></a>
+                        <a href="#" className="filer_items col-md-4 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Pups Screener</div></a>
                     </div>
 
                     <div className="row">
-                        <a href="#" className="filer_items offset-md-2 col-md-3 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Puppies Statistics</div></a>
+                        <a href="#" className="filer_items offset-md-2 col-md-3 col-12 hover_effect hover_effect_row" disabled><div className="margin_small6">Pups Statistics</div></a>
                     </div>
 
 

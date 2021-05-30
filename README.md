@@ -10,10 +10,11 @@
 
 Ether is required to fuel transactions, which include purchasing and breeding PUPS. The underlying mechanism works on the Ethereum ***ERC-721 standard***, and the pups are indivisible and unique.
 
-The platform is makes use of the blockchain deployed live on the ***Ropsten Test Network*** and can be accessed at- <a href="https://pushpit07.github.io/HashPuppies/#/" target="_blank">https://pushpit07.github.io/HashPuppies/#/</a>
+The platform is makes use of the blockchain deployed live on the ***Ropsten Test Network*** and can be accessed at: <a href="https://pushpit07.github.io/HashPuppies/#/" target="_blank">https://pushpit07.github.io/HashPuppies/#/</a>
 
-YoutTube-
+**YoutTube:**  
 
+<br/>
 
 Start Your Digital Pup Collection. Create *Collections* of your favourite pups and share them with the community.
 
@@ -32,7 +33,8 @@ The website requires the Metamask wallet to be installed in the browser to be ab
 Tests for the contracts have also been written and can be found in the `test` directory.
 
 <br/>
-<b>Technologies used</b>
+
+**Technologies used**
 
 <br/>
 <br/>
