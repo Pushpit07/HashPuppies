@@ -37,6 +37,7 @@ The website requires the Metamask wallet to be installed in the browser to be ab
 
 Tests for the contracts have also been written and can be found in the `test` directory.
 
+<br/>
 
 **Setting up the project:**
 
