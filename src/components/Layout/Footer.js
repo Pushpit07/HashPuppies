@@ -50,7 +50,7 @@ function Footer() {
 
                         <div className="row hover_effect_row margin6">
                             <a href="#" className="filer_items offset-2 col-2 hover_effect" disabled><div>Our offerings</div></a>
-                            <a href="#" className="filer_items col-2 hover_effect" disabled><div>Advertise with us</div></a>
+                            <a href="https://github.com/Pushpit07/HashPuppies" className="filer_items col-2 hover_effect" target="_blank"><div>GitHub Repo</div></a>
                             <a href="https://www.linkedin.com/in/pushpit-bhardwaj/" className="filer_items col-2 hover_effect" target="_blank"><div>Mastermind #1</div></a>
                             <a href="#" className="filer_items col-2 hover_effect" disabled><div>Email Newsletter</div></a>
                         </div>
@@ -65,7 +65,7 @@ function Footer() {
                         <div className="row hover_effect_row">
                             <a href="/" className="filer_items offset-2 col-2 hover_effect"><div>Getting started</div></a>
                             <a href="#" className="filer_items col-2 hover_effect" disabled><div></div></a>
-                            <a href="/signin" className="filer_items col-2 hover_effect" disabled><div>Report a Bug</div></a>
+                            <a href="https://github.com/Pushpit07/HashPuppies" className="filer_items col-2 hover_effect" target="_blank"><div>Report a Bug</div></a>
                             <a href="/create" className="filer_items col-2 hover_effect"><div>Create a Pup</div></a>
                         </div>
 
@@ -92,17 +92,17 @@ function Footer() {
 
                         <div className="row margin_small6">
                             <a href="#" className="filer_items col-6 hover_effect" disabled><div>Our offerings</div></a>
-                            <a href="/contactus" className="filer_items col-6 hover_effect" disabled><div>Contact Us</div></a>
+                            <a href="https://www.linkedin.com/in/pushpit-bhardwaj/" className="filer_items col-6 hover_effect" target="_blank"><div>Mastermind #1</div></a>
                         </div>
 
                         <div className="row margin_small3">
                             <a href="#" className="filer_items col-6 hover_effect" disabled><div>How HashPuppies work?</div></a>
-                            <a href="/contactus" className="filer_items col-6 hover_effect" disabled><div>Report a Bug</div></a>
+                            <a href="https://www.linkedin.com/in/aayushi-bhardwaj-30a0141b0/" className="filer_items col-6 hover_effect" target="_blank"><div></div>Mastermind #2</a>
                         </div>
 
                         <div className="row margin_small3">
                             <a href="/" className="filer_items col-6 hover_effect"><div>Getting started</div></a>
-                            <a href="/signin" className="filer_items col-6 hover_effect" disabled><div>Sign in</div></a>
+                            <a href="https://github.com/Pushpit07/HashPuppies" className="filer_items col-6 hover_effect"><div>Report a Bug</div></a>
                         </div>
 
                         <div className="row margin_small3">
@@ -116,7 +116,7 @@ function Footer() {
                         </div>
 
                         <div className="row margin_small6">
-                            <a href="#" className="filer_items col-6 hover_effect" disabled><div>Advertise with us</div></a>
+                            <a href="https://github.com/Pushpit07/HashPuppies" className="filer_items col-6 hover_effect" target="_blank"><div>GitHub Repo</div></a>
                             <a href="#" className="filer_items col-6 hover_effect" disabled><div>Email Newsletter</div></a>
                         </div>
 

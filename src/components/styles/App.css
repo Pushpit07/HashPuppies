@@ -87,6 +87,18 @@ body {
     padding-top: 2.5px;
     padding-bottom: 2.5px;
     background-color: #d8af28 !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.exclusive_btn:hover {
+    border: none !important;
+    outline: none !important;
+}
+
+.exclusive_btn:focus {
+    border: none !important;
+    outline: none !important;
 }
 
 .image {
