@@ -14,10 +14,10 @@ class Navbar extends Component {
 
                 <ul className="navbar-nav px-3">
                     <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
-                        <Link to={"/forsale"}><span className="navbar-brand h8 mr-5 cursor_ptr darker_grey create_pup_nav">For Sale</span></Link>
-                        <Link to={"/owned"}><span className="navbar-brand h8 mr-5 cursor_ptr darker_grey create_pup_nav">My Pups</span></Link>
-                        <Link to={"/createdbyme"}><span className="navbar-brand h8 mr-5 cursor_ptr darker_grey create_pup_nav">Created by me</span></Link>
-                        <Link to={"/create"}><span className="navbar-brand h8 mr-5 cursor_ptr darker_grey create_pup_nav">Create Pup</span></Link>
+                        <Link to={"/HashPuppies/forsale"}><span className="navbar-brand h8 mr-5 cursor_ptr darker_grey create_pup_nav">For Sale</span></Link>
+                        <Link to={"/HashPuppies/owned"}><span className="navbar-brand h8 mr-5 cursor_ptr darker_grey create_pup_nav">My Pups</span></Link>
+                        <Link to={"/HashPuppies/createdbyme"}><span className="navbar-brand h8 mr-5 cursor_ptr darker_grey create_pup_nav">Created by me</span></Link>
+                        <Link to={"/HashPuppies/create"}><span className="navbar-brand h8 mr-5 cursor_ptr darker_grey create_pup_nav">Create Pup</span></Link>
 
                         <small className="mr-3 text_color">
                             <small id="account">{this.props.account}</small>
