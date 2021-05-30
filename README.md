@@ -30,13 +30,14 @@ The website requires the Metamask wallet to be installed in the browser to be ab
 
 ---
 
+<br/>
+
 Tests for the contracts have also been written and can be found in the `test` directory.
 
 <br/>
 
-**Technologies used**
+**Technologies used:**
 
-<br/>
 <br/>
 
 Solidity
