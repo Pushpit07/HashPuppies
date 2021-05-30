@@ -57,7 +57,10 @@ class App extends Component {
 		this.setState({ account: accounts[0] })
 
 		// Network ID
-		const networkId = await web3.eth.net.getId()
+		// Local Network
+		// const networkId = await web3.eth.net.getId() 
+		// Ropsten Test Network
+		const networkId = 3
 		const networkData = HashPuppies.networks[networkId]
 
 		if (networkData) {
