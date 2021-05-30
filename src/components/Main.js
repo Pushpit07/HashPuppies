@@ -11,6 +11,7 @@ class Main extends Component {
 							<div className="col-12 col-md-6 col-lg-4 mb-5 mt-3" key={key}>
 								<div className="card border-light shadow-soft">
 									<div className="card-header pt-4 text-center">
+										{puppy.exclusive ? <button className="btn exclusive_btn"><b>EXCLUSIVE</b></button> : null}
 										<a href={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} target="_blank" data-toggle="tooltip" data-placement="bottom" title="Click to maximize">
 											<img src={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} className="image card-img-top rounded" />
 										</a>

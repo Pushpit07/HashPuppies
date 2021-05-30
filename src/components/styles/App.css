@@ -78,6 +78,17 @@ body {
     box-shadow:  10px 10px 25px #03060a, -10px -10px 20px #09101c;
 }
 
+.exclusive_btn {
+    position: absolute;
+    right: 30px;
+    margin-top: 5px;
+    font-size: 0.8em;
+    border-radius: 30px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    background-color: #e2b729 !important;
+}
+
 .image {
     max-width: 320px;
     border-radius: 5px;
