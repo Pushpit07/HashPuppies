@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Web3 from 'web3';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import HashPuppies from '../abis/HashPuppies.json';
 import './styles/App.css';
 import Navbar from './Layout/Navbar';
@@ -121,7 +121,7 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<BrowserRouter>
+				<HashRouter>
 					<div>
 						<Navbar account={this.state.account} />
 						<HeroSection />
@@ -131,27 +131,22 @@ class App extends Component {
 									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
 									: <Main puppies={this.state.puppies} purchasePuppy={this.purchasePuppy} account={this.state.account} />}
 							/>
-							<Route exact path="/HashPuppies" render={() =>
-								this.state.loading
-									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
-									: <Main puppies={this.state.puppies} purchasePuppy={this.purchasePuppy} account={this.state.account} />}
-							/>
-							<Route path="/HashPuppies/create" render={() =>
+							<Route exact path="/create" render={() =>
 								this.state.loading
 									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
 									: <CreatePup createPuppy={this.createPuppy} captureFile={this.captureFile} />}
 							/>
-							<Route path="/HashPuppies/createdbyme" render={() =>
+							<Route exact path="/createdbyme" render={() =>
 								this.state.loading
 									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
 									: <CreatedByUser puppies={this.state.puppies} account={this.state.account} />}
 							/>
-							<Route path="/HashPuppies/owned" render={() =>
+							<Route exact path="/owned" render={() =>
 								this.state.loading
 									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
 									: <MyPups puppies={this.state.puppies} account={this.state.account} />}
 							/>
-							<Route path="/HashPuppies/forsale" render={() =>
+							<Route exact path="/forsale" render={() =>
 								this.state.loading
 									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
 									: <ForSale puppies={this.state.puppies} account={this.state.account} />}
@@ -159,7 +154,7 @@ class App extends Component {
 						</Switch>
 						<Footer />
 					</div>
-				</BrowserRouter>
+				</HashRouter>
 			</div>
 		);
 	}
