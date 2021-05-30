@@ -37,6 +37,11 @@ The website requires the Metamask wallet to be installed in the browser to be ab
 
 Tests for the contracts have also been written and can be found in the `test` directory.
 
+
+**Setting up the project:**
+
+`npm install` to install all dependencies. Then, switch Metamask to the Ropsten Test Network. `npm run start` to start the development server and `npm run deploy` to deploy.
+
 <br/>
 
 **Technologies used:**
