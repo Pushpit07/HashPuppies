@@ -55,7 +55,7 @@ class Main extends Component {
 													</div>
 												</div>
 											</div>
-											{!puppy.purchased && !(puppy.owner == this.props.account)
+											{!puppy.purchased && !(puppy.owner === this.props.account)
 												?
 												<div className="row align-items-center justify-content-center">
 													< button
@@ -69,7 +69,7 @@ class Main extends Component {
 														Purchase
                                             		</button>
 												</div>
-												: !puppy.purchased && (puppy.owner == this.props.account) ?
+												: !puppy.purchased && (puppy.owner === this.props.account) ?
 													<div className="container-fluid mt-5" >
 														<div className="row mt-3 align-items-center justify-content-center">
 															<div className="col-4 owner">
@@ -80,7 +80,7 @@ class Main extends Component {
 															</div>
 														</div>
 													</div>
-													: puppy.purchased && (puppy.owner == this.props.account) ?
+													: puppy.purchased && (puppy.owner === this.props.account) ?
 														<div className="container-fluid mt-5" >
 															<div className="row mt-3 align-items-center justify-content-center">
 																<div className="col-2 owner">

@@ -17,7 +17,7 @@ class Main extends Component {
                         return (
                             <Fragment>
                                 {
-                                    puppy.purchased && puppy.owner == this.props.account ?
+                                    puppy.purchased && puppy.owner === this.props.account ?
                                         <div className="col-12 col-md-6 col-lg-4 mb-5 mt-3" key={key}>
                                             <div className="card border-light shadow-soft">
                                                 <div className="card-header pt-4 text-center">
