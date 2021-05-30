@@ -2,7 +2,7 @@
 
 <br/>
 
-***HashPuppies*** is a decentralised platform built on the ethereum network. It is centered around collectible and adorable creatures (NFTs). Each pup is one-of-a-kind and 100% owned by the user; it cannot be replicated, taken away, or destroyed. The platform provides collectible asset puppies that people can HODL. The puppies are ***NFTs*** (Non-Fungible Tokens) that can be traded using Ether.
+***HashPuppies*** is a decentralised platform built on the Ethereum Network. It is centered around collectible and adorable creatures (PUPS). Each pup is one-of-a-kind and 100% owned by the user; it cannot be replicated, taken away, or destroyed. The platform provides collectible asset puppies that people can HODL. The puppies are ***NFTs*** (Non-Fungible Tokens) that can be traded using Ether.
 
 <br/>
 
@@ -12,8 +12,8 @@
 
 Ether is required to fuel transactions, which include purchasing and breeding PUPS. The underlying mechanism works on the Ethereum ***ERC-721 standard***, and the pups are indivisible and unique.
 
-The platform is makes use of the blockchain deployed live on the ***Ropsten Test Network*** and can be accessed at: 
-<a href="https://pushpit07.github.io/HashPuppies/#/" target="_blank">https://pushpit07.github.io/HashPuppies/#/</a>
+The platform makes use of the blockchain deployed live on the ***Ropsten Test Network***.
+It can be accessed at: <a href="https://pushpit07.github.io/HashPuppies/#/" target="_blank">https://pushpit07.github.io/HashPuppies/#/</a>
 
 **YoutTube:**  <a href="https://youtu.be/qXC9lmd1NJE" target="_blank">https://youtu.be/qXC9lmd1NJE</a>
 
@@ -21,7 +21,6 @@ The platform is makes use of the blockchain deployed live on the ***Ropsten Test
 
 Start Your Digital Pup Collection. Create *Collections* of your favourite pups and share them with the community.
 
-<br/>
 
 ---
 
