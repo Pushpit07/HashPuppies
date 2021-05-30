@@ -18,7 +18,7 @@ Start Your Digital Pup Collection. Create *Collections* of your favourite pups a
 
 The website requires the Metamask wallet to be installed in the browser to be able to access the Ethreum blockchain and make transactions.
 
-> Also, I'm looking for contributors who would like to expand this project to launch in the mainstream market.
+> Also, I'm looking for contributors who would like to expand this project to launch in the mainstream market. Kindly, contact me if you're interested.
 
 ---
 
