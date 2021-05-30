@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "28ac8efa1b273554e516",
+    "revision": "29de04df4876c9a127db",
     "url": "/HashPuppies/static/css/main.7672cdab.chunk.css"
   },
   {
-    "revision": "28ac8efa1b273554e516",
-    "url": "/HashPuppies/static/js/main.28ac8efa.chunk.js"
+    "revision": "29de04df4876c9a127db",
+    "url": "/HashPuppies/static/js/main.29de04df.chunk.js"
   },
   {
     "revision": "667b0fbd3e4a4764e3cf",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/HashPuppies/static/js/runtime~main.bb5c5dab.js"
   },
   {
-    "revision": "162bf165e5c78e856ac82d5e62012b3d",
+    "revision": "43169f76a82b2b14d2470b48686643ff",
     "url": "/HashPuppies/index.html"
   }
 ];
