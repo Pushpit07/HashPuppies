@@ -8,6 +8,8 @@ import Footer from './Layout/Footer';
 import HeroSection from './HeroSection';
 import Main from './Main';
 import CreatePup from './CreatePup';
+import CreatedByUser from './CreatedByUser';
+import MyPups from './MyPups';
 
 const ipfsClient = require('ipfs-http-client');
 const ipfs = ipfsClient({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' });
@@ -126,12 +128,22 @@ class App extends Component {
 							<Route exact path="/" render={() =>
 								this.state.loading
 									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
-									: <Main puppies={this.state.puppies} purchasePuppy={this.purchasePuppy} />}
+									: <Main puppies={this.state.puppies} purchasePuppy={this.purchasePuppy} account={this.state.account} />}
 							/>
 							<Route path="/create" render={() =>
 								this.state.loading
 									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
 									: <CreatePup createPuppy={this.createPuppy} captureFile={this.captureFile} />}
+							/>
+							<Route path="/createdbyme" render={() =>
+								this.state.loading
+									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
+									: <CreatedByUser puppies={this.state.puppies} account={this.state.account} />}
+							/>
+							<Route path="/owned" render={() =>
+								this.state.loading
+									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
+									: <MyPups puppies={this.state.puppies} account={this.state.account} />}
 							/>
 						</Switch>
 						<Footer />
