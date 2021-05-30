@@ -79,17 +79,27 @@ class Main extends Component {
 															</div>
 														</div>
 													</div>
-													:
-													<div className="container-fluid mt-5" >
-														<div className="row mt-3 align-items-center justify-content-center">
-															<div className="col-2 owner">
-																Owner
+													: puppy.purchased && (puppy.owner == this.props.account) ?
+														<div className="container-fluid mt-5" >
+															<div className="row mt-3 align-items-center justify-content-center">
+																<div className="col-2 owner">
+																	&nbsp;
 															</div>
-															<div className="col-12 owner_address darker_grey text-center">
-																{puppy.owner}
+																<div className="col-12 owner_address darker_grey text-center">
+																	Owned by me
+															</div>
 															</div>
 														</div>
-													</div>
+														: <div className="container-fluid mt-5" >
+															<div className="row mt-3 align-items-center justify-content-center">
+																<div className="col-2 owner">
+																	Owner
+															</div>
+																<div className="col-12 owner_address darker_grey text-center">
+																	{puppy.owner}
+																</div>
+															</div>
+														</div>
 											}
 											<br />
 											<br />

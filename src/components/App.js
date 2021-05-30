@@ -5,11 +5,12 @@ import HashPuppies from '../abis/HashPuppies.json';
 import './styles/App.css';
 import Navbar from './Layout/Navbar';
 import Footer from './Layout/Footer';
-import HeroSection from './HeroSection';
+import HeroSection from './Layout/HeroSection';
 import Main from './Main';
 import CreatePup from './CreatePup';
 import CreatedByUser from './CreatedByUser';
 import MyPups from './MyPups';
+import ForSale from './ForSale';
 
 const ipfsClient = require('ipfs-http-client');
 const ipfs = ipfsClient({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' });
@@ -144,6 +145,11 @@ class App extends Component {
 								this.state.loading
 									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
 									: <MyPups puppies={this.state.puppies} account={this.state.account} />}
+							/>
+							<Route path="/forsale" render={() =>
+								this.state.loading
+									? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
+									: <ForSale puppies={this.state.puppies} account={this.state.account} />}
 							/>
 						</Switch>
 						<Footer />

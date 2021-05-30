@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
-class CreatedByUser extends Component {
+class ForSale extends Component {
 
     render() {
         return (
@@ -8,7 +8,7 @@ class CreatedByUser extends Component {
                 <div className="row">
                     <main role="main" className="col-lg-12 d-flex">
                         <div className="content">
-                            <h2>Created by me</h2>
+                            <h2>For Sale</h2>
                         </div>
                     </main>
                 </div>
@@ -17,7 +17,7 @@ class CreatedByUser extends Component {
                         return (
                             <Fragment>
                                 {
-                                    !puppy.purchased && puppy.owner == this.props.account ?
+                                    !puppy.purchased && !(puppy.owner == this.props.account) ?
                                         <div className="col-12 col-md-6 col-lg-4 mb-5 mt-3" key={key}>
 
                                             <div className="card border-light shadow-soft">
@@ -65,6 +65,18 @@ class CreatedByUser extends Component {
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div className="row align-items-center justify-content-center">
+                                                            < button
+                                                                name={puppy.id}
+                                                                value={window.web3.utils.fromWei(puppy.price.toString(), 'Ether')}
+                                                                onClick={(event) => {
+                                                                    this.props.purchasePuppy(event.target.name, window.web3.utils.toWei(event.target.value, 'Ether'));
+                                                                }}
+                                                                className="buyButton btn mt-5"
+                                                            >
+                                                                Purchase
+                                            		        </button>
+                                                        </div>
                                                         <br />
                                                         <br />
                                                     </div>
@@ -83,4 +95,4 @@ class CreatedByUser extends Component {
     }
 }
 
-export default CreatedByUser;
+export default ForSale;

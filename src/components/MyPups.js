@@ -4,7 +4,14 @@ class Main extends Component {
 
     render() {
         return (
-            <div className="container-fluid mt-5" style={{ maxWidth: '1200px' }}>
+            <div className="container-fluid mt-4" style={{ maxWidth: '1200px' }}>
+                <div className="row">
+                    <main role="main" className="col-lg-12 d-flex">
+                        <div className="content">
+                            <h2>My Pups</h2>
+                        </div>
+                    </main>
+                </div>
                 <div className="row mb-5 mt-5">
                     {this.props.puppies.map((puppy, key) => {
                         return (
