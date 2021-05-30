@@ -1,3 +1,5 @@
+const { assert } = require('chai');
+
 const HashPuppies = artifacts.require('./HashPuppies.sol');
 
 require('chai')
@@ -42,6 +44,8 @@ contract('HashPuppies', ([deployer, seller, buyer]) => {
                 assert.equal(event.tokenId.toNumber(), 1, 'id is correct');
                 assert.equal(event.from, '0x0000000000000000000000000000000000000000', 'from is correct');
                 assert.equal(event.to, seller, 'to is correct');
+                const event1 = result.logs[1].args;
+                assert.equal(event1.price, web3.utils.toWei('1', 'Ether'), 'price is correct');
 
                 // Failure: Puppy must have a name
                 await contract.createPuppy('', web3.utils.toWei('1', 'Ether'), 'abc123', 0, { from: seller }).should.be.rejected;
@@ -56,7 +60,7 @@ contract('HashPuppies', ([deployer, seller, buyer]) => {
                 // Mint 3 more tokens
                 await contract.createPuppy('Einie', web3.utils.toWei('2', 'Ether'), 'abc123', 0, { from: seller });
                 await contract.createPuppy('Ruby', web3.utils.toWei('5', 'Ether'), 'abc123', 0, { from: seller });
-                await contract.createPuppy('Rob', web3.utils.toWei('1', 'Ether'), 'abc123', 0, { from: seller });
+                await contract.createPuppy('Rob', web3.utils.toWei('0.2', 'Ether'), 'abc123', 0, { from: seller });
                 const totalSupply = await contract.totalSupply();
 
                 let puppy;
@@ -87,13 +91,13 @@ contract('HashPuppies', ([deployer, seller, buyer]) => {
                 oldSellerBalance = new web3.utils.BN(oldSellerBalance);
 
                 //Success: Buyer makes purchase
-                const result = await contract.purchasePuppy(puppiesCount - 1, { from: buyer, value: web3.utils.toWei('1', 'Ether') });
+                const result = await contract.purchasePuppy(puppiesCount - 1, { from: buyer, value: web3.utils.toWei('0.2', 'Ether') });
 
                 // Check logs
                 const event = result.logs[0].args;
                 assert.equal(event.id.toNumber(), puppiesCount, 'id is correct');
                 assert.equal(event.name, 'Rob', 'name is correct');
-                assert.equal(event.price, web3.utils.toWei('1', 'Ether'), 'price is correct');
+                assert.equal(event.price, web3.utils.toWei('0.2', 'Ether'), 'price is correct');
                 assert.equal(event.owner, buyer, 'owner is correct');
                 assert.equal(event.purchased, true, 'purchased is correct');
 
@@ -103,7 +107,7 @@ contract('HashPuppies', ([deployer, seller, buyer]) => {
                 newSellerBalance = new web3.utils.BN(newSellerBalance);
 
                 let price;
-                price = web3.utils.toWei('1', 'Ether');
+                price = web3.utils.toWei('0.2', 'Ether');
                 price = new web3.utils.BN(price);
 
                 const expectedBalance = oldSellerBalance.add(price);

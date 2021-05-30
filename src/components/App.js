@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Web3 from 'web3';
-import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HashPuppies from '../abis/HashPuppies.json';
 import './styles/App.css';
 import Navbar from './Layout/Navbar';
@@ -98,7 +98,7 @@ class App extends Component {
 			}
 
 			this.setState({ loading: true })
-			this.state.hashPuppies.methods.createPuppy(name, price, result[0].hash, exclusive).send({ from: this.state.account })
+			this.state.hashPuppies.methods.createPuppy(name, window.web3.utils.toWei(price, 'Ether'), result[0].hash, exclusive).send({ from: this.state.account })
 				.on('transactionHash', (hash) => {
 					// this.setState({ puppies: [...this.state.puppies, name] })
 					this.setState({ loading: false });

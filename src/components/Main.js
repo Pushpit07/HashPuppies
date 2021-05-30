@@ -5,21 +5,21 @@ class Main extends Component {
 	render() {
 		return (
 			<div className="container-fluid mt-5" style={{ maxWidth: '1200px' }}>
-				<div class="row mb-5 mt-5">
+				<div className="row mb-5 mt-5">
 					{this.props.puppies.map((puppy, key) => {
 						return (
-							<div class="col-12 col-md-6 col-lg-4 mb-5 mt-3">
-								<div class="card border-light shadow-soft" key={key}>
-									<div class="card-header pt-4 text-center">
+							<div className="col-12 col-md-6 col-lg-4 mb-5 mt-3" key={key}>
+								<div className="card border-light shadow-soft">
+									<div className="card-header pt-4 text-center">
 										<a href={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} target="_blank" data-toggle="tooltip" data-placement="bottom" title="Click to maximize">
 											<img src={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} className="image card-img-top rounded" />
 										</a>
 									</div>
-									<div class="card-body pt-2">
-										<div class="row align-items-center justify-content-center">
-											<h3 class="h5 card-title mt-4">{puppy.name}</h3>
+									<div className="card-body pt-2">
+										<div className="row align-items-center justify-content-center">
+											<h3 className="h5 card-title mt-4">{puppy.name}</h3>
 										</div>
-										<p class="card-text">
+										<div className="card-text">
 											<div className="container-fluid mt-3 offset-1" >
 												<div className="row">
 													<div className="offset-1 col-5">
@@ -34,7 +34,7 @@ class Main extends Component {
 														Price :
 													</div>
 													<div className="col-6">
-														{puppy.price.toString()}  ETH
+														{window.web3.utils.fromWei(puppy.price.toString(), 'Ether')}  ETH
 													</div>
 												</div>
 												<div className="row">
@@ -42,7 +42,7 @@ class Main extends Component {
 														Exclusive :
 													</div>
 													<div className="col-6">
-														{puppy.exclusive ? <i class="far fa-check-circle exclusive"></i> : <i class="far fa-times-circle not_exclusive"></i>}
+														{puppy.exclusive ? <i className="far fa-check-circle exclusive"></i> : <i className="far fa-times-circle not_exclusive"></i>}
 													</div>
 												</div>
 												<div className="row">
@@ -56,10 +56,10 @@ class Main extends Component {
 											</div>
 											{!puppy.purchased
 												?
-												<div class="row align-items-center justify-content-center">
+												<div className="row align-items-center justify-content-center">
 													< button
 														name={puppy.id}
-														value={puppy.price}
+														value={window.web3.utils.fromWei(puppy.price.toString(), 'Ether')}
 														onClick={(event) => {
 															this.props.purchasePuppy(event.target.name, window.web3.utils.toWei(event.target.value, 'Ether'));
 														}}
@@ -81,7 +81,7 @@ class Main extends Component {
 											}
 											<br />
 											<br />
-										</p>
+										</div>
 									</div>
 								</div>
 							</div>
