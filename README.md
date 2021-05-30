@@ -16,7 +16,7 @@ The platform makes use of the blockchain deployed live on the ***Ropsten Test Ne
 
 It can be accessed at: <a href="https://pushpit07.github.io/HashPuppies/#/" target="_blank">https://pushpit07.github.io/HashPuppies/#/</a>
 
-**YoutTube:**  <a href="https://youtu.be/qXC9lmd1NJE" target="_blank">https://youtu.be/qXC9lmd1NJE</a>
+**YouTube:**  <a href="https://youtu.be/qXC9lmd1NJE" target="_blank">https://youtu.be/qXC9lmd1NJE</a>
 
 <br/>
 
