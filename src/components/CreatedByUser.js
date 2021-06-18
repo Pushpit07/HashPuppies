@@ -36,7 +36,7 @@ class CreatedByUser extends Component {
                                                             <div className="row">
                                                                 <div className="offset-1 col-5">
                                                                     ID :
-													            </div>
+                                                                </div>
                                                                 <div className="col-6">
                                                                     {puppy.id.toString()}
                                                                 </div>
@@ -44,15 +44,15 @@ class CreatedByUser extends Component {
                                                             <div className="row">
                                                                 <div className="offset-1 col-5">
                                                                     Price :
-													            </div>
+                                                                </div>
                                                                 <div className="col-6">
                                                                     {window.web3.utils.fromWei(puppy.price.toString(), 'Ether')}  ETH
-													            </div>
+                                                                </div>
                                                             </div>
                                                             <div className="row">
                                                                 <div className="offset-1 col-5">
                                                                     Exclusive :
-													            </div>
+                                                                </div>
                                                                 <div className="col-6">
                                                                     {puppy.exclusive ? <i className="far fa-check-circle exclusive"></i> : <i className="far fa-times-circle not_exclusive"></i>}
                                                                 </div>
@@ -60,7 +60,7 @@ class CreatedByUser extends Component {
                                                             <div className="row">
                                                                 <div className="offset-1 col-5">
                                                                     Fullscreen :
-													            </div>
+                                                                </div>
                                                                 <div className="col-6">
                                                                     <a href={`https://ipfs.infura.io/ipfs/${puppy.imgHash}`} target="_blank" className="darker_grey"><u>View large</u></a>
                                                                 </div>
@@ -78,6 +78,11 @@ class CreatedByUser extends Component {
                             </Fragment>
                         )
                     })}
+                    <main role="main" className="col-lg-12 ml-auto mr-auto align-items-center justify-content-center" style={{ maxWidth: '700px' }}>
+                        <div className="row align-items-center justify-content-center">
+                            <h4 className="mt-3 mb-4">You haven't created any Pups yet.</h4>
+                        </div>
+                    </main>
                 </div>
             </div >
         );

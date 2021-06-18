@@ -46,7 +46,7 @@ class App extends Component {
 			window.web3 = new Web3(window.web3.currentProvider)
 		}
 		else {
-			window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
+			window.alert("Non-Ethereum browser detected. Your browser doesn't support blockchain applications. You should consider installing MetaMask (a Chrome browser extension) and then try again. Or just watch how the website works: \nhttps://youtu.be/qXC9lmd1NJE")
 		}
 	}
 
