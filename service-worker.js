@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/HashPuppies/precache-manifest.f699e789d3aee8ba0755b26b5724df8a.js"
+  "/HashPuppies/precache-manifest.08fdb9ba408da9fafd7ea457c0bab3d3.js"
 );
 
 workbox.clientsClaim();
