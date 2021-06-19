@@ -46,7 +46,9 @@ class App extends Component {
 			window.web3 = new Web3(window.web3.currentProvider)
 		}
 		else {
-			window.alert("Non-Ethereum browser detected. Your browser doesn't support blockchain applications. You should consider installing MetaMask (a Chrome browser extension) and then try again. Or just watch how the website works: \nhttps://youtu.be/qXC9lmd1NJE")
+			window.web3 = new Web3(new Web3.providers.HttpProvider("https://ropsten.infura.io/v3/9e3025d8ff044c3e9b9b37b80ac719a6"))
+			window.alert("Non-Ethereum browser detected. You should consider installing Metamask");
+			// window.alert("Non-Ethereum browser detected. Your browser doesn't support blockchain applications. You should consider installing MetaMask (a Chrome browser extension) and then try again. Or just watch how the website works: \nhttps://youtu.be/qXC9lmd1NJE")
 		}
 	}
 
