@@ -1,15 +1,15 @@
 {
-  "main.css": "/HashPuppies/static/css/main.7672cdab.chunk.css",
-  "main.js": "/HashPuppies/static/js/main.d2de7edb.chunk.js",
-  "main.js.map": "/HashPuppies/static/js/main.d2de7edb.chunk.js.map",
-  "static/css/1.2a400d36.chunk.css": "/HashPuppies/static/css/1.2a400d36.chunk.css",
-  "static/js/1.ae23d782.chunk.js": "/HashPuppies/static/js/1.ae23d782.chunk.js",
-  "static/js/1.ae23d782.chunk.js.map": "/HashPuppies/static/js/1.ae23d782.chunk.js.map",
-  "runtime~main.js": "/HashPuppies/static/js/runtime~main.bb5c5dab.js",
-  "runtime~main.js.map": "/HashPuppies/static/js/runtime~main.bb5c5dab.js.map",
-  "static/css/1.2a400d36.chunk.css.map": "/HashPuppies/static/css/1.2a400d36.chunk.css.map",
-  "static/css/main.7672cdab.chunk.css.map": "/HashPuppies/static/css/main.7672cdab.chunk.css.map",
-  "index.html": "/HashPuppies/index.html",
-  "precache-manifest.0aaaf8fd97155108437ccc1bc5b76104.js": "/HashPuppies/precache-manifest.0aaaf8fd97155108437ccc1bc5b76104.js",
-  "service-worker.js": "/HashPuppies/service-worker.js"
+  "main.css": "/static/css/main.7672cdab.chunk.css",
+  "main.js": "/static/js/main.72b6076d.chunk.js",
+  "main.js.map": "/static/js/main.72b6076d.chunk.js.map",
+  "static/css/1.2a400d36.chunk.css": "/static/css/1.2a400d36.chunk.css",
+  "static/js/1.8289044b.chunk.js": "/static/js/1.8289044b.chunk.js",
+  "static/js/1.8289044b.chunk.js.map": "/static/js/1.8289044b.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/css/main.7672cdab.chunk.css.map": "/static/css/main.7672cdab.chunk.css.map",
+  "static/css/1.2a400d36.chunk.css.map": "/static/css/1.2a400d36.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.6be855f0551da85b43aab59d2ed448b4.js": "/precache-manifest.6be855f0551da85b43aab59d2ed448b4.js",
+  "service-worker.js": "/service-worker.js"
 }
